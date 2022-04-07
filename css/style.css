@@ -1,0 +1,121 @@
+body{
+    background:url(../imagenes/figuras.jpg);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    color: #2396bd;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#contBotones{
+
+    width: 450px;
+    height: 450px;
+    background: #2396bd;
+    
+}
+
+#contFigura{
+    width: 450px;
+    height: 450px;
+    background: #b9b9b9;
+    
+}
+
+#figura{
+    width: 180px;
+    height: 180px;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 60px;
+    transition: 1s;    /* se le da para el tiempo del cambio de cuadrado a circulo */ 
+}
+/* se llama a figura siempre con # para traer un id y se agrega circulo para unirlo y 50% sea el borde del radio */
+#figura.circulo{  
+    border-radius: 50%;
+    transform: rotate(360deg);   /* le damos un cambio mas para que rote 360 grados */
+    background: red; /* hara que al cambiar se ponga color rojo */
+  
+}
+#figura.rombo{
+    width: 100px ;
+  height: 100px ;
+    background: blueviolet;
+    border: 3px solid #555;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+#figura.rectangulohorizontal{
+    width: 400px;
+    height: 100px;
+    background: chartreuse;
+
+}
+#figura.rectangulovertical{
+    width: 200px;
+    height: 300px;
+    background: rgb(4, 0, 255);
+
+}
+#fila{
+    display: flex ;
+    justify-content: space-evenly;
+}
+#figura.arriba{
+    transform: translatey(-50px);
+}
+#figura.abajo{
+    transform: translatey(50px);
+}
+#figura.abajo{
+    transform: translatey(50px);
+}
+#figura.derecha{
+    transform: translatex(-50px);
+}
+#figura.izquierda{
+    transform: translatex(50px);
+}
+#figura.diagonal{
+    transform: translate(120px)translate(100px);
+}
+
+#contOperaciones input{
+    background:gold;
+    padding: 3px;
+    
+}
+#chat{
+    background-color: firebrick;
+    width: 300px;
+    height: 350px;
+    position: fixed;
+    right: -300px;
+    top: 20%;
+}
+#chat.active{
+    right: 0;
+}
+#btnchat{
+    position:fixed;
+    right: -16PX;
+    top: 26%;
+    background: #2396bd;
+    transform: rotate(-90deg);
+    transition: 1s;
+
+}
+#btnchat.active{
+    right: 240px;
+}
+
+
+
+ 
+

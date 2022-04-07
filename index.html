@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+      <button id="btnchat" onclick="chatActive()">CHAT</button>
+       <div id="chat"class="">
+        <h2>CHAT EN LINEA</h2>
+     </div>
+
+
+    <h1>FIGURAS GEOMETRICAS</h1>
+    <!-- se usa id para poder identificar c/U -->
+    <div id="fila"> 
+         <div id="contBotones">  
+            <h2>BOTONES</h2>
+            <button onclick="fcirculo()">CIRCULO</button> <!-- se crea el boton para utilizar y se genere el cambio del cuadro a un circulo -->
+            <button onclick="frombo()">rombo</button>
+            <button onclick="frectangulohorizontal()">rectangulo horizontal</button>
+            <button onclick="frectangulovertical()">rectangulo vertical</button>
+            <button onclick="farriba()">arriba</button>
+            <button onclick="fabajo()">abajo</button>
+            <button onclick="fderecha()">derecha</button>
+            <button onclick="fizquierda()">izquierda</button>
+            <button onclick="fdiagonal()">diagonal</button>
+    
+            
+        </div>
+
+    <div id="contFigura"> 
+        <h2>FIGURA</h2>
+        <div id="figura"> <!-- se crea figura para crear el cuadro pequeño -->
+        </div>
+
+    </div>
+
+    </div>
+  
+  <div id="contOperaciones">
+    <H2>CAPTURAR DATOS</H2>
+      <INput type="number"id="valor1">
+        <select name="#"id="operaciones">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+            <select>
+                <input type="number"id="valor2">
+                <button onclick="operaciones()">=</button>
+                <input type="number"id="respuesta">
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
